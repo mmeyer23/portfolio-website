@@ -16,6 +16,7 @@ function Character() {
   const linkedinIcon = theme === 'light' ? linkedLight : linkedDark;
 
   return (
+    <div>
     <section id='character' className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
@@ -32,7 +33,7 @@ function Character() {
       </div>
       <div className={styles.info}>
         <h1>
-          Mason <br />
+          Mason 
           Meyer
         </h1>
         <h2>Full Stack Developer</h2>
@@ -50,8 +51,10 @@ function Character() {
         <a href={CV} download>
           <button className='hover'>Resume</button>
         </a>
-      </div>
+        </div>
     </section>
+    <div className={styles.arrow}>&#8963;</div>
+    </div>
   );
 }
 
