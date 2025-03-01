@@ -1,3 +1,35 @@
+.consoleWrapper {
+  display: inline-block; /* Ensure the container stays inline */
+  white-space: nowrap;
+}
+
+.consoleUnderscore {
+  display: inline-block; /* Ensure the underscore stays inline */
+  position: relative;
+  top: -0.1em;
+  left: 3px;
+  width: 8px; /* Adjust width if necessary */
+  height: 30px; /* Adjust height if necessary */
+  color: var(--text-color);
+  background-color: transparent;
+  animation: blink 0.8s step-end infinite;
+}
+
+.consoleText {
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
+
+.hidden {
+  opacity: 100;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 .container {
   display: flex;
@@ -7,12 +39,15 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
+  animation: enter 1s ease-out 1 both;
 
   .character {
     max-width: 200px;
   }
-  span {
+  .social {
     display: flex;
+  }
+  span {
     gap: 25px;
     justify-content: center;
 
@@ -27,14 +62,18 @@
   a {
     width: fit-content;
     align-self: center;
+    text-decoration: none;
   }
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--btn-color);
     color: var(--btn-text-color);
     border: none;
     border-radius: 20px;
-    width: 126px;
+    width: 200px;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -87,7 +126,6 @@
       max-width: 450px;
       width: 450px;
     }
-
   }
 }
 
@@ -103,10 +141,10 @@
 .arrow {
   font-size: 30px;
   text-align: center;
-  transform: rotate(180deg); 
-  margin-top: -60px; 
-  color: var(--text-color); 
-  animation: bounce 1s ease-in-out infinite; 
+  transform: rotate(180deg);
+  margin-top: -60px;
+  color: var(--text-color);
+  animation: bounce 1s ease-in-out infinite;
 }
 
 @keyframes bounce {
@@ -114,9 +152,20 @@
     transform: translateY(0) rotate(180deg);
   }
   50% {
-    transform: translateY(-10px) rotate(180deg); 
+    transform: translateY(-10px) rotate(180deg);
   }
   100% {
-    transform: translateY(0) rotate(180deg); 
+    transform: translateY(0) rotate(180deg);
+  }
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: perspective(500px) translate3d(-35px, -40px, -150px)
+      rotate3d(1, -1, 0, 35deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(500px) translate3d(0, 0, 0);
   }
 }
