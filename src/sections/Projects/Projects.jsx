@@ -2,8 +2,8 @@ import styles from './Projects.Styles.module.css';
 import ProjectCard from '../../common/ProjectCard';
 import dataWizard from '../../assets/dataWizardLogo.webp';
 import adventureMatch from '../../assets/adventureBuddyLogo.webp';
-import lifeMetrics from '../../assets/liftMetrics.webp';
-import viberr from '../../assets/viberr.png';
+import liftMetrics from '../../assets/liftMetrics.webp';
+import underConstruction from '../../assets/underConstruction.webp';
 
 //make an array of project data and then map over and create project cards
 
@@ -14,29 +14,29 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={dataWizard}
-          link='https://www.github.com'
+          link='https://github.com/mmeyer23/dataWizard'
           alt='DataWizard Logo'
           name='DataWizard'
           description='A.I. Database Population Tool'
         />
         <ProjectCard
           src={adventureMatch}
-          link='https://www.github.com'
+          link='https://github.com/mmeyer23/AdventureMatch'
           alt='Adventure Match Logo'
           name='Adventure Match'
           description='An App for Outdoor Enthusiasts'
         />
         <ProjectCard
-          src={lifeMetrics}
+          src={liftMetrics}
           link='https://www.github.com'
           alt='LiftMetrics Logo'
           name='LiftMetrics'
           description='Personalized Workout Tracker'
         />
         <ProjectCard
-          src={viberr}
+          src={underConstruction}
           link='https://www.github.com'
-          alt='Viber Logo'
+          alt='Under Contruction Logo'
           name='In Progress'
           description='Coming Soon!'
         />
