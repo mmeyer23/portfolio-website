@@ -73,7 +73,7 @@ function Character() {
   const linkedinIcon = theme === 'light' ? linkedLight : linkedDark;
 
   const underscoreStyle = {
-    backgroundColor: theme === 'light' ? '#fff' : '#333', // Adjust this color if needed
+    backgroundColor: theme === 'light' ? '#fff' : '#222', // Adjust this color if needed
   };
 
   useEffect(() => {

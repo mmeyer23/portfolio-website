@@ -11,7 +11,6 @@
   width: 8px;
   height: 30px;
   color: var(--text-color);
-  background-color: transparent;
   animation: blink 0.8s step-end infinite;
 }
 

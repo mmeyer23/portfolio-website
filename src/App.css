@@ -87,7 +87,8 @@ p {
   h1 {
     font-size: 40px;
   }
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 24px;
   }
   p {
@@ -97,7 +98,6 @@ p {
   .sectionTitle {
     margin-bottom: 60px;
   }
-
 }
 
 @media (width >= 1400px) {
@@ -111,5 +111,4 @@ p {
   .sectionTitle {
     margin-bottom: 75px;
   }
-
 }
