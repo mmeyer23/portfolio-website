@@ -1,15 +1,15 @@
 .consoleWrapper {
-  display: inline-block; /* Ensure the container stays inline */
+  display: inline-block;
   white-space: nowrap;
 }
 
 .consoleUnderscore {
-  display: inline-block; /* Ensure the underscore stays inline */
+  display: inline-block;
   position: relative;
   top: -0.1em;
   left: 3px;
-  width: 8px; /* Adjust width if necessary */
-  height: 30px; /* Adjust height if necessary */
+  width: 8px;
+  height: 30px;
   color: var(--text-color);
   background-color: transparent;
   animation: blink 0.8s step-end infinite;
@@ -116,6 +116,15 @@
   gap: 20px;
 }
 
+.arrow {
+  font-size: 30px;
+  text-align: center;
+  transform: rotate(180deg);
+  margin-top: -60px;
+  color: var(--text-color);
+  animation: bounce 1s ease-in-out infinite;
+}
+
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;
@@ -136,15 +145,6 @@
       width: 500px;
     }
   }
-}
-
-.arrow {
-  font-size: 30px;
-  text-align: center;
-  transform: rotate(180deg);
-  margin-top: -60px;
-  color: var(--text-color);
-  animation: bounce 1s ease-in-out infinite;
 }
 
 @keyframes bounce {

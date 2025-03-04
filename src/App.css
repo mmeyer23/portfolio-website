@@ -6,16 +6,22 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --flicker-start-color: rgba(0, 204, 255, 0.3); /* Light blue */
+  --flicker-mid-color: rgba(0, 204, 255, 0.5); /* Brighter blue */
+  --flicker-end-color: rgba(0, 128, 255, 0.3); /* Darker blue */
 }
 
 [data-theme='dark'] {
   --background-color: #222;
-  --btn-color: #fff;
+  --btn-color: #bd4040;
   --btn-text-color: #222;
   --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --flicker-start-color: rgba(255, 65, 108, 0.3); /* Light red */
+  --flicker-mid-color: rgba(255, 65, 108, 0.5); /* Brighter red */
+  --flicker-end-color: rgba(255, 0, 0, 0.3); /* Darker red */
 }
 
 body {

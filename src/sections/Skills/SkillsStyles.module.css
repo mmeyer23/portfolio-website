@@ -2,25 +2,55 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
-  span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  img {
-    width: 20px;
-  }
+  background-color: var(--background-color); /* Matches global theme */
+  color: var(--text-color); /* Inherits dynamic text color */
+  padding: 40px 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .skillList {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(160px, 1fr)
+  ); /* Dynamic grid */
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  width: 100%; /* Ensures it takes full width */
+  margin: 0 auto;
+}
+
+.skillBox {
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  max-width: 30ch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg-color); /* Dynamic card background */
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 4px 10px var(--flicker-start-color); /* Initial shadow color */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  animation: flickerShadow 2s infinite; /* Apply flickering animation */
+}
+
+.skillBox:hover {
+  transform: scale(1.1);
+}
+
+.skillIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.skillName {
+  color: var(--text-color); /* Inherits dynamic text color */
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 hr {
@@ -29,17 +59,45 @@ hr {
   border: none;
   background-color: var(--text-color);
   margin: 30px auto;
+  transition: background-color 0.3s ease-in-out;
 }
 
-@media (width >= 800px) {
+/* For screens smaller than 800px, control the number of columns */
+@media (max-width: 800px) {
   .skillList {
-    max-width: fit-content;
-    gap: 30px;
-    p {
-      font-size: 20px;
-    }
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for screens 800px and smaller */
   }
-  hr {
-    width: 300px;
+}
+
+/* For screens smaller than 600px, control the number of columns */
+@media (max-width: 600px) {
+  .skillList {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for screens 600px and smaller */
+  }
+}
+
+/* For very small screens (e.g., 480px or below), show 1 column */
+@media (max-width: 480px) {
+  .skillList {
+    grid-template-columns: 1fr; /* 1 column for screens 480px and smaller */
+    justify-items: center;
+  }
+}
+
+@keyframes flickerShadow {
+  0% {
+    box-shadow: 0 4px 10px var(--flicker-start-color); /* Start color */
+  }
+  25% {
+    box-shadow: 0 4px 10px var(--flicker-mid-color); /* Mid color */
+  }
+  50% {
+    box-shadow: 0 4px 10px var(--flicker-end-color); /* End color */
+  }
+  75% {
+    box-shadow: 0 4px 10px var(--flicker-mid-color); /* Mid color */
+  }
+  100% {
+    box-shadow: 0 4px 10px var(--flicker-start-color); /* Back to start color */
   }
 }
