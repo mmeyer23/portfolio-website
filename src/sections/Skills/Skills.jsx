@@ -20,6 +20,8 @@ import dockerIcon from '../../assets/docker.webp';
 import awsIcon from '../../assets/awslogo.png';
 import jestIcon from '../../assets/jest.png';
 import muiIcon from '../../assets/materialui.png';
+import nextIcon from '../../assets/nextjslogo.webp';
+import tailwindIcon from '../../assets/tailwind.svg';
 
 const skills = [
   { skill: 'HTML', src: htmlIcon },
@@ -41,6 +43,8 @@ const skills = [
   { skill: 'AWS', src: awsIcon },
   { skill: 'Jest', src: jestIcon },
   { skill: 'Material UI', src: muiIcon },
+  { skill: 'Next.js', src: nextIcon },
+  { skill: 'TailwindCSS', src: tailwindIcon },
 ];
 
 function Skills() {
