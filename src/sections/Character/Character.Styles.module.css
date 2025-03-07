@@ -24,12 +24,6 @@
   opacity: 100;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -125,6 +119,8 @@
   visibility: hidden;
 }
 
+/* Media query section */
+
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;
@@ -147,6 +143,14 @@
       max-width: 500px;
       width: 500px;
     }
+  }
+}
+
+/* Keyframes section */
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 

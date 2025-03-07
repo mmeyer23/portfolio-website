@@ -60,6 +60,8 @@ input[type='submit']:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+/* Media query section */
+
 @media (width >= 800px) {
   textarea,
   input:not([type='submit']) {
