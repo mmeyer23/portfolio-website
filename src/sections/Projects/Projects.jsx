@@ -53,11 +53,11 @@ function Projects() {
           className={styles.projectCard}
         >
           <ProjectCard
-            src={adventureMatch}
-            link='https://github.com/mmeyer23/AdventureMatch'
-            alt='Adventure Match Logo'
-            name='Adventure Match'
-            description='An App for Outdoor Enthusiasts'
+            src={liftMetrics}
+            link='https://github.com/mmeyer23/LiftMetrics'
+            alt='LiftMetrics Logo'
+            name='LiftMetrics'
+            description='Personalized Workout Tracker'
           />
         </div>
         <div
@@ -65,11 +65,11 @@ function Projects() {
           className={styles.projectCard}
         >
           <ProjectCard
-            src={liftMetrics}
-            link='https://www.github.com'
-            alt='LiftMetrics Logo'
-            name='LiftMetrics'
-            description='Personalized Workout Tracker'
+            src={adventureMatch}
+            link='https://github.com/mmeyer23/AdventureMatch'
+            alt='Adventure Match Logo'
+            name='Adventure Match'
+            description='An App for Outdoor Enthusiasts'
           />
         </div>
         <div
