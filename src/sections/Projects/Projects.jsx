@@ -41,11 +41,11 @@ function Projects() {
           className={styles.projectCard}
         >
           <ProjectCard
-            src={dataWizard}
-            link='https://github.com/mmeyer23/dataWizard'
-            alt='DataWizard Logo'
-            name='DataWizard'
-            description='A.I. Database Population Tool'
+            src={liftMetrics}
+            link='https://github.com/mmeyer23/LiftMetrics'
+            alt='LiftMetrics Logo'
+            name='LiftMetrics'
+            description='Personalized Workout Tracker'
           />
         </div>
         <div
@@ -53,11 +53,11 @@ function Projects() {
           className={styles.projectCard}
         >
           <ProjectCard
-            src={liftMetrics}
-            link='https://github.com/mmeyer23/LiftMetrics'
-            alt='LiftMetrics Logo'
-            name='LiftMetrics'
-            description='Personalized Workout Tracker'
+            src={dataWizard}
+            link='https://github.com/mmeyer23/dataWizard'
+            alt='DataWizard Logo'
+            name='DataWizard'
+            description='A.I. Database Population Tool'
           />
         </div>
         <div
