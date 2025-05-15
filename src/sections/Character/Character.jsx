@@ -73,7 +73,7 @@ function Character() {
   const linkedinIcon = theme === 'light' ? linkedLight : linkedDark;
 
   const underscoreStyle = {
-    backgroundColor: theme === 'light' ? '#fff' : '#222', 
+    backgroundColor: theme === 'light' ? '#fff' : '#222',
   };
 
   useEffect(() => {
@@ -119,10 +119,10 @@ function Character() {
             </span>
           </div>
           <span className={styles.social}>
-            <a href='https:///github.com' target='_blank'>
+            <a href='https:///github.com/mmeyer23' target='_blank'>
               <img src={githubIcon} alt='Github Icon' />
             </a>
-            <a href='https:///linkedin.com' target='_blank'>
+            <a href='www.linkedin.com/in/-mason-meyer' target='_blank'>
               <img src={linkedinIcon} alt='Linkedin Icon' />
             </a>
           </span>
