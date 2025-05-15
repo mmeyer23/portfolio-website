@@ -122,7 +122,7 @@ function Character() {
             <a href='https:///github.com/mmeyer23' target='_blank'>
               <img src={githubIcon} alt='Github Icon' />
             </a>
-            <a href='www.linkedin.com/in/-mason-meyer' target='_blank'>
+            <a href='https://www.linkedin.com/in/-mason-meyer/' target='_blank'>
               <img src={linkedinIcon} alt='Linkedin Icon' />
             </a>
           </span>
