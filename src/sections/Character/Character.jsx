@@ -127,9 +127,7 @@ function Character() {
             </a>
           </span>
           <p className={styles.description}>
-            Passionate about innovation and designing scalable high-performance
-            systems, with a proven ability to lead teams and deliver impactful
-            solutions that drive business success.
+            Full-stack engineer blending technical depth with real-world cross-functional perspective to build fast, user-first platforms.
           </p>
           <a href={CV} download>
             <button className='hover'>
