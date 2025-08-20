@@ -127,7 +127,7 @@ function Character() {
             </a>
           </span>
           <p className={styles.description}>
-            Full-stack engineer blending technical depth with real-world cross-functional perspective to build fast, user-first platforms.
+          Full-stack engineer and systems analyst blending technical depth with cross-functional insight to design user-focused platforms and efficient workflows.
           </p>
           <a href={CV} download>
             <button className='hover'>
