@@ -80,7 +80,7 @@ function Character() {
     consoleText(
       [
         'Full Stack Developer',
-        'Master of Science in Computer Science',
+        'M.S. in Computer Science',
         'AI Enthusiast',
         'Tech Speaker & Presenter',
         'Open Source Contributor',
