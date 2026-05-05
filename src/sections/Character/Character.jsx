@@ -80,9 +80,8 @@ function Character() {
     consoleText(
       [
         'Full Stack Developer',
-        'Web Developer',
-        'React Enthusiast',
-        'Node.js Specialist',
+        'Master of Science in Computer Science',
+        'AI Enthusiast',
         'Tech Speaker & Presenter',
         'Open Source Contributor',
       ],
@@ -127,7 +126,9 @@ function Character() {
             </a>
           </span>
           <p className={styles.description}>
-          Full-stack engineer and systems analyst blending technical depth with cross-functional insight to design user-focused platforms and efficient workflows.
+            Full-stack engineer and systems analyst blending technical depth
+            with cross-functional insight to design user-focused platforms and
+            efficient workflows.
           </p>
           <a href={CV} download>
             <button className='hover'>
