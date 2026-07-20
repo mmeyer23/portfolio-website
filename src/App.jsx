@@ -4,6 +4,7 @@ import {
   HiMoon,
   HiSun,
 } from 'react-icons/hi2';
+import PropTypes from 'prop-types';
 import avatar from './assets/cartoonheadshot.png';
 import resume from './assets/CV.pdf';
 import { useTheme } from './common/ThemeContext';
@@ -85,6 +86,32 @@ function ProjectCard({ project }) {
     </article>
   );
 }
+
+ExternalLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+};
+
+ProjectVisual.propTypes = {
+  type: PropTypes.string.isRequired,
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    eyebrow: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    contribution: PropTypes.string.isRequired,
+    stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+    highlights: PropTypes.arrayOf(PropTypes.string).isRequired,
+    visibility: PropTypes.string,
+    link: PropTypes.string,
+    linkLabel: PropTypes.string,
+    visual: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 function App() {
   const { theme, toggleTheme } = useTheme();
