@@ -20,23 +20,8 @@ export const signals = [
 
 export const projects = [
   {
-    id: 'daily-shred',
-    eyebrow: '01 / Subscription SaaS',
-    name: 'The Daily Shred',
-    summary:
-      'A B2B2C wellness platform built and operated from architecture through ongoing product development.',
-    contribution: 'Co-founder · Lead developer',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'AWS'],
-    highlights: [
-      'Designed Redis sorted-set leaderboards with five-minute batch refreshes, reducing API latency by about 80% and database load by about 90%.',
-      'Built cohort-based messaging experiments that contributed to a 90% lift in email opens and a 250% lift in click-through rates.',
-    ],
-    visibility: 'Proprietary product',
-    visual: 'signals',
-  },
-  {
     id: 'data-wizard',
-    eyebrow: '02 / Safe AI tooling',
+    eyebrow: '01 / Safe AI tooling',
     name: 'DataWizard',
     summary:
       'A preview-first workflow that turns natural-language requests into reviewable PostgreSQL seed plans.',
@@ -52,7 +37,7 @@ export const projects = [
   },
   {
     id: 'legacy-modernizer',
-    eyebrow: '03 / Software modernization',
+    eyebrow: '02 / Software modernization',
     name: 'Legacy Modernizer',
     summary:
       'An inspectable pipeline for analyzing legacy Fortran and producing structured Python migration guidance.',

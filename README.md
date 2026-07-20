@@ -13,7 +13,7 @@ A responsive engineering portfolio centered on selected work, technical decision
 
 - Systems & Signal responsive visual design.
 - Persisted light and dark mode with operating-system preference fallback.
-- Structured case studies for The Daily Shred, DataWizard, and Legacy Modernizer.
+- Structured case studies for DataWizard and Legacy Modernizer.
 - Professional experience and capability summaries derived from the current resume.
 - Semantic navigation, visible focus states, and reduced-motion support.
 - Open Graph and X metadata with a site-specific social preview.

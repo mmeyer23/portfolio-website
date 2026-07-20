@@ -8,7 +8,7 @@ The portfolio presents Mason Meyer's engineering experience through concise, ver
 
 1. **Positioning** - role, perspective, location, and primary actions.
 2. **Proof signals** - a compact summary of education, product scale, technical focus, and working perspective.
-3. **Selected work** - three case studies describing the problem, contribution, technical approach, and evidence.
+3. **Selected work** - two public technical projects describing the problem, contribution, technical approach, and evidence.
 4. **Experience and capabilities** - a chronological professional summary followed by grouped technical strengths.
 5. **Contact** - direct email, GitHub, LinkedIn, and resume paths.
 
