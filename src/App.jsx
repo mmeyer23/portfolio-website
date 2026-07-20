@@ -6,7 +6,7 @@ import {
 } from 'react-icons/hi2';
 import PropTypes from 'prop-types';
 import avatar from './assets/cartoonheadshot.png';
-import resume from './assets/CV.pdf';
+import resume from './assets/cv.pdf';
 import { useTheme } from './common/ThemeContext';
 import {
   capabilities,

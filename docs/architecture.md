@@ -18,6 +18,7 @@ The portfolio presents Mason Meyer's engineering experience through concise, ver
 - `src/App.jsx` owns the semantic page composition and small presentational components.
 - `src/App.css` owns theme tokens, responsive layout, interaction, and motion.
 - `src/common/ThemeContext.jsx` owns the persisted light/dark preference.
+- `public/og.png` provides the site-specific social sharing preview.
 
 This intentionally small structure keeps content edits straightforward and avoids component abstraction that would not improve maintainability at the site's current scale.
 
