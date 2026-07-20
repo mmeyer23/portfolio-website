@@ -298,8 +298,8 @@ li {
 
 .portraitFrame {
   display: grid;
-  aspect-ratio: 4 / 5;
-  place-items: end center;
+  aspect-ratio: 1;
+  place-items: center;
   overflow: hidden;
   border: 1px solid var(--line);
   background: linear-gradient(145deg, var(--surface-subtle), var(--surface));
@@ -319,18 +319,18 @@ li {
 .portraitFrame img {
   position: relative;
   z-index: 1;
-  width: 92%;
-  max-height: 94%;
+  width: 84%;
+  max-height: 84%;
   object-fit: contain;
   filter: saturate(0.88) contrast(1.02);
 }
 
 .portraitTag {
-  position: absolute;
-  bottom: 24px;
-  left: -32px;
   display: grid;
+  width: max-content;
   gap: 5px;
+  margin-top: 12px;
+  margin-left: -24px;
   border: 1px solid var(--line);
   background: var(--surface);
   box-shadow: var(--shadow);
@@ -812,9 +812,8 @@ li {
   }
 
   .portraitTag {
-    right: -8px;
-    bottom: 18px;
-    left: auto;
+    margin-right: -8px;
+    margin-left: auto;
   }
 
   .signalGrid {
