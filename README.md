@@ -1,20 +1,22 @@
 # Mason Meyer Portfolio
 
-A responsive engineering portfolio centered on selected work, technical decisions, and professional experience. The site uses a restrained editorial system with persistent light and dark themes.
+A responsive portfolio centered on systems analysis, solutions delivery, technical projects, and measurable professional outcomes. The site uses a restrained editorial system with persistent light and dark themes.
 
 ## Goals
 
-- Present a concise and verifiable engineering narrative.
-- Highlight substantive work through problem, contribution, stack, and outcome.
+- Present a concise narrative connecting business needs, people, and technology.
+- Demonstrate work across discovery, analysis, solution design, implementation, and adoption.
+- Preserve engineering depth through substantive technical projects.
 - Make the resume, GitHub, LinkedIn, and email paths easy to find.
 - Maintain strong accessibility and responsive behavior across devices.
 
 ## Selected features
 
 - Systems & Signal responsive visual design.
+- A compact discovery-to-adoption solution lifecycle.
 - Persisted light and dark mode with operating-system preference fallback.
 - Structured case studies for DataWizard and Legacy Modernizer.
-- Professional experience and capability summaries derived from the current resume.
+- Outcome-oriented experience and capability summaries derived from the current resume.
 - Semantic navigation, visible focus states, and reduced-motion support.
 - Open Graph and X metadata with a site-specific social preview.
 
@@ -49,6 +51,7 @@ npm run build
 
 ## Roadmap
 
-- Add focused long-form case studies when additional public project material is available.
+- Add systems-analysis case studies when suitable public project material is available.
+- Add focused long-form technical case studies when additional public project material is available.
 - Add automated accessibility and end-to-end checks.
 - Revisit deployment metadata if the canonical domain changes.

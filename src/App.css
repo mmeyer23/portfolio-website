@@ -242,7 +242,7 @@ li {
 .hero h1 {
   max-width: 920px;
   margin-block: 28px 30px;
-  font-size: clamp(3.3rem, 6.6vw, 6.3rem);
+  font-size: clamp(3.15rem, 5.6vw, 5.4rem);
   font-weight: 600;
   letter-spacing: -0.068em;
   line-height: 0.95;
@@ -364,6 +364,63 @@ li {
 
 .signalGrid strong {
   font-size: 0.84rem;
+}
+
+.solutionLifecycle {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 2.35fr);
+  border-bottom: 1px solid var(--line);
+}
+
+.lifecycleIntro {
+  align-content: center;
+  border-right: 1px solid var(--line);
+  padding: 34px 26px;
+}
+
+.lifecycleIntro h2 {
+  max-width: 260px;
+  margin-top: 10px;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.lifecycleSteps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lifecycleSteps li {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  border-right: 1px solid var(--line);
+  padding: 30px 20px;
+}
+
+.lifecycleSteps li:last-child {
+  border-right: 0;
+}
+
+.lifecycleNumber {
+  color: var(--accent);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+}
+
+.lifecycleSteps strong {
+  font-size: 0.82rem;
+}
+
+.lifecycleSteps p {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.55;
 }
 
 .section {
@@ -746,6 +803,27 @@ li {
     grid-template-columns: 1fr 1fr;
   }
 
+  .solutionLifecycle {
+    grid-template-columns: 1fr;
+  }
+
+  .lifecycleIntro {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .lifecycleSteps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .lifecycleSteps li:nth-child(3) {
+    border-right: 0;
+  }
+
+  .lifecycleSteps li:nth-child(-n + 3) {
+    border-bottom: 1px solid var(--line);
+  }
+
   .signalGrid > div:nth-child(2) {
     border-right: 0;
   }
@@ -803,7 +881,7 @@ li {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 15vw, 4.4rem);
+    font-size: clamp(2.75rem, 12.5vw, 3.8rem);
   }
 
   .heroActions,
@@ -826,6 +904,20 @@ li {
   }
 
   .signalGrid > div:last-child {
+    border-bottom: 0;
+  }
+
+  .lifecycleSteps {
+    grid-template-columns: 1fr;
+  }
+
+  .lifecycleSteps li,
+  .lifecycleSteps li:nth-child(3) {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .lifecycleSteps li:last-child {
     border-bottom: 0;
   }
 

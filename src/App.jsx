@@ -14,6 +14,7 @@ import {
   profile,
   projects,
   signals,
+  solutionLifecycle,
 } from './data/portfolio';
 import './App.css';
 
@@ -125,7 +126,7 @@ function App() {
             <span>{profile.name}</span>
           </a>
           <div className='navLinks'>
-            <a href='#work'>Work</a>
+            <a href='#work'>Projects</a>
             <a href='#experience'>Experience</a>
             <a href='#contact'>Contact</a>
             <a className='resumeLink' href={resume} target='_blank'>
@@ -159,7 +160,7 @@ function App() {
               <p className='heroLead'>{profile.introduction}</p>
               <div className='heroActions'>
                 <a className='button buttonPrimary' href='#work'>
-                  View selected work <span aria-hidden='true'>↓</span>
+                  Explore solutions and outcomes <span aria-hidden='true'>↓</span>
                 </a>
                 <a className='button' href={`mailto:${profile.email}`}>
                   Start a conversation <HiArrowUpRight aria-hidden='true' />
@@ -186,15 +187,32 @@ function App() {
             ))}
           </div>
 
+          <section className='solutionLifecycle' aria-labelledby='lifecycle-title'>
+            <div className='lifecycleIntro'>
+              <p className='eyebrow'>How I work</p>
+              <h2 id='lifecycle-title'>From discovery to adoption.</h2>
+            </div>
+            <ol className='lifecycleSteps'>
+              {solutionLifecycle.map((step, index) => (
+                <li key={step.label}>
+                  <span className='lifecycleNumber'>0{index + 1}</span>
+                  <strong>{step.label}</strong>
+                  <p>{step.detail}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+
           <section className='section' id='work' aria-labelledby='work-title'>
             <div className='sectionHeading'>
               <div>
-                <p className='eyebrow'>01 / Selected work</p>
-                <h2 id='work-title'>Systems with a reason to exist.</h2>
+                <p className='eyebrow'>01 / Technical projects</p>
+                <h2 id='work-title'>Engineering systems shaped around real constraints.</h2>
               </div>
               <p>
-                A focused selection of work showing how I frame constraints,
-                make technical decisions, and carry software into real use.
+                Technical projects demonstrating how I decompose complex
+                problems, design reviewable workflows, and balance
+                implementation with operational risk.
               </p>
             </div>
             <div className='projectList'>
@@ -211,11 +229,12 @@ function App() {
           >
             <div className='experienceIntro'>
               <p className='eyebrow'>02 / Experience</p>
-              <h2 id='experience-title'>Technical depth. Operational context.</h2>
+              <h2 id='experience-title'>Analysis, implementation, and adoption.</h2>
               <p>
-                My background spans product engineering, cloud systems, and
-                company operations. That range helps me connect implementation
-                details to the people and outcomes a system supports.
+                My work spans stakeholder discovery, business operations,
+                solution delivery, and software engineering. I connect the
+                implementation details to the people, processes, and outcomes
+                each system supports.
               </p>
               <a className='textLink' href={resume} download>
                 Download resume <HiArrowDownTray aria-hidden='true' />
@@ -246,7 +265,7 @@ function App() {
           <section className='section capabilitySection' aria-labelledby='capability-title'>
             <div>
               <p className='eyebrow'>03 / Capabilities</p>
-              <h2 id='capability-title'>A practical full-stack toolkit.</h2>
+              <h2 id='capability-title'>Capabilities across the solution lifecycle.</h2>
             </div>
             <div className='capabilityList'>
               {capabilities.map((capability) => (
@@ -261,7 +280,7 @@ function App() {
           <section className='contactSection' id='contact' aria-labelledby='contact-title'>
             <div>
               <p className='eyebrow'>04 / Contact</p>
-              <h2 id='contact-title'>Have a complex problem worth simplifying?</h2>
+              <h2 id='contact-title'>Have a system, workflow, or technical challenge worth improving?</h2>
             </div>
             <div className='contactLinks'>
               <a href={`mailto:${profile.email}`}>
