@@ -1,21 +1,44 @@
 export const profile = {
   name: 'Mason Meyer',
-  role: 'Full-stack software engineer',
+  role: 'Systems analyst & solutions engineer',
   location: 'Portland, Oregon',
   availability: 'Open to relocation',
   email: 'mason.meyer@gmail.com',
   github: 'https://github.com/mmeyer23',
   linkedin: 'https://www.linkedin.com/in/-mason-meyer/',
-  headline: 'I build software with the whole system in view.',
+  headline: 'I turn complex business needs into practical technical systems.',
   introduction:
-    'I bring together formal systems training, hands-on SaaS development, and a decade of customer and business leadership to turn complex needs into practical software.',
+    'I combine systems analysis, solution design, software implementation, and operational leadership to improve workflows and carry projects from discovery through delivery.',
 };
 
 export const signals = [
   { label: 'Education', value: 'M.S. Computer Science' },
-  { label: 'Product scale', value: '2,000+ SaaS users' },
-  { label: 'Focus', value: 'Full-stack systems' },
-  { label: 'Perspective', value: 'Code to customer' },
+  { label: 'Solutions delivered', value: '5 web launches' },
+  { label: 'Product scale', value: '2,000+ active subscribers' },
+  { label: 'Business impact', value: '50% → 80% retention' },
+];
+
+export const solutionLifecycle = [
+  {
+    label: 'Discover',
+    detail: 'Stakeholder goals, requirements, and constraints',
+  },
+  {
+    label: 'Map',
+    detail: 'Processes, systems, and data flows',
+  },
+  {
+    label: 'Design',
+    detail: 'A practical solution and implementation plan',
+  },
+  {
+    label: 'Deliver',
+    detail: 'Build, configure, integrate, and deploy',
+  },
+  {
+    label: 'Enable',
+    detail: 'Documentation, handoff, and adoption',
+  },
 ];
 
 export const projects = [
@@ -55,48 +78,70 @@ export const projects = [
 
 export const experience = [
   {
+    dates: '2025 - Present',
+    company: 'Independent Web Development',
+    role: 'Independent Web Developer',
+    detail:
+      'Led discovery and delivery across five client and founder-led launches, translating business goals into technical requirements, user flows, integrations, and production systems from solution design through deployment and handoff.',
+  },
+  {
     dates: '2020 - Present',
     company: 'The Daily Shred',
-    role: 'Co-founder & Lead Developer',
+    role: 'Co-founder',
     detail:
-      'Lead architecture and development for a subscription platform while balancing product, infrastructure, customer, and operational needs.',
+      'Operate a digital subscription service serving 2,000+ active subscribers, leading client proposals and product demonstrations while owning the technical and operational systems behind service delivery.',
   },
   {
     dates: '2024 - 2025',
     company: 'PodMD · OSLabs',
-    role: 'Full-stack Software Engineer',
+    role: 'Software Engineer',
     detail:
-      'Built workload-aware restart orchestration and least-privilege EKS integrations for an open-source Kubernetes observability tool.',
+      'Translated reliability and access-control constraints into workload-aware restart orchestration and least-privilege AWS EKS integrations for an open-source Kubernetes observability platform.',
     link: 'https://github.com/oslabs-beta/PodMD',
   },
   {
     dates: '2018 - 2024',
     company: 'The Forge Fitness Studio',
-    role: 'Web Developer · Chief Operating Officer',
+    role: 'Co-founder & Operations Manager',
     detail:
-      'Developed production workflows in React, Express, and PostgreSQL while leading the customer and operating systems those tools supported.',
+      'Administered the core business platform, evaluated vendors, documented workflows, and translated operational requirements into improvements that raised member retention from approximately 50% to 80% and engagement by 65%.',
   },
 ];
 
 export const capabilities = [
   {
-    label: 'Languages',
-    values: 'JavaScript, TypeScript, Python, C++, SQL, Bash',
+    label: 'Discovery & analysis',
+    values:
+      'Requirements gathering, stakeholder discovery, process analysis, workflow design, solution design, documentation',
   },
   {
-    label: 'Applications',
-    values: 'React, Next.js, Node.js, Express, FastAPI, REST APIs',
+    label: 'Solution delivery',
+    values:
+      'Software configuration, implementation, API integration, deployment, training, handoff, adoption',
   },
   {
-    label: 'Data',
-    values: 'PostgreSQL, MySQL, Redis, Pandas, scikit-learn',
+    label: 'Business systems',
+    values:
+      'CRM administration, reporting, data analysis, vendor evaluation, operational workflows, staff enablement',
   },
   {
-    label: 'Infrastructure',
-    values: 'AWS, Docker, Kubernetes, EKS, Linux, GitHub Actions',
+    label: 'Technical foundation',
+    values:
+      'JavaScript, TypeScript, Python, SQL, React, Next.js, Node.js, REST APIs, relational databases',
   },
   {
-    label: 'Quality',
-    values: 'Jest, Mocha, Supertest, Prometheus, Grafana',
+    label: 'Cloud & operations',
+    values:
+      'AWS, Docker, Kubernetes, Cloudflare, GitHub Actions, authentication, authorization, observability',
+  },
+  {
+    label: 'Communication & enablement',
+    values:
+      'Stakeholder presentations, product demonstrations, technical writing, process documentation, staff training',
+  },
+  {
+    label: 'Credentials',
+    values:
+      'AWS Cloud Practitioner, Kong Microservices, Atlassian Agile Project Management, PagerDuty DevOps',
   },
 ];

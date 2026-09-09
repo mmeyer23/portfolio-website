@@ -2,15 +2,16 @@
 
 ## Purpose
 
-The portfolio presents Mason Meyer's engineering experience through concise, verifiable examples. It is designed for fast scanning while preserving enough implementation detail to support deeper evaluation.
+The portfolio presents Mason Meyer's systems analysis, solutions delivery, and engineering experience through concise, verifiable examples. It is designed for fast scanning while preserving enough implementation detail to support deeper evaluation.
 
 ## Information architecture
 
-1. **Positioning** - role, perspective, location, and primary actions.
-2. **Proof signals** - a compact summary of education, product scale, technical focus, and working perspective.
-3. **Selected work** - two public technical projects describing the problem, contribution, technical approach, and evidence.
-4. **Experience and capabilities** - a chronological professional summary followed by grouped technical strengths.
-5. **Contact** - direct email, GitHub, LinkedIn, and resume paths.
+1. **Positioning** - role, value proposition, location, and primary actions.
+2. **Proof signals** - a compact summary of education, solutions delivered, product scale, and business impact.
+3. **Solution lifecycle** - a concise discovery-to-adoption model showing how work progresses.
+4. **Technical projects** - two public engineering projects describing the problem, contribution, technical approach, and evidence.
+5. **Experience and capabilities** - a chronological professional summary followed by strengths grouped around the solution lifecycle.
+6. **Contact** - direct email, GitHub, LinkedIn, and resume paths.
 
 ## Application structure
 
@@ -26,6 +27,7 @@ This intentionally small structure keeps content edits straightforward and avoid
 
 - Use outcomes only when supported by the resume or project documentation.
 - Describe individual contribution explicitly on collaborative work.
+- Keep technical projects separate from future systems-analysis case studies.
 - Prefer a small number of substantive case studies over a broad project gallery.
-- Group tools by engineering responsibility instead of displaying a logo wall.
+- Group capabilities by solution responsibility instead of displaying a technology logo wall.
 - Keep contact paths direct and avoid collecting visitor information unnecessarily.
