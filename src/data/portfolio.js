@@ -13,7 +13,7 @@ export const profile = {
 
 export const signals = [
   { label: 'Education', value: 'M.S. Computer Science' },
-  { label: 'Solutions delivered', value: '5 web launches' },
+  { label: 'Engagement impact', value: '+65% post-launch' },
   { label: 'Product scale', value: '2,000+ active subscribers' },
   { label: 'Business impact', value: '50% → 80% retention' },
 ];
@@ -97,7 +97,6 @@ export const experience = [
     role: 'Software Engineer',
     detail:
       'Translated reliability and access-control constraints into workload-aware restart orchestration and least-privilege AWS EKS integrations for an open-source Kubernetes observability platform.',
-    link: 'https://github.com/oslabs-beta/PodMD',
   },
   {
     dates: '2018 - 2024',

@@ -210,9 +210,9 @@ function App() {
                 <h2 id='work-title'>Engineering systems shaped around real constraints.</h2>
               </div>
               <p>
-                Technical projects demonstrating how I decompose complex
-                problems, design reviewable workflows, and balance
-                implementation with operational risk.
+                Software engineering projects I built to explore safe
+                AI-assisted database tooling and practical approaches to
+                legacy code modernization.
               </p>
             </div>
             <div className='projectList'>
